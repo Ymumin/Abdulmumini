@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id='answer1'></p>
+        <p id='answer2'></p>
+
+        <script type="text/javascript">
+        let name = "Abdulmumini";
+        const courses = ["HTML", " CSS", " JS" ];
+        document.getElementById('answer1').innerHTML="My name and courses are as follows: " + name + " and " + courses +"." + "\n";
+
+        const data = [];
+        for (let i=1; i<=200; i++){
+            if(i % 2 !==0){
+                data.push(i);
+            }
+        }
+        document.getElementById('answer2').innerHTML=data;
+       
+        </script>
+    </body>
+</html>
