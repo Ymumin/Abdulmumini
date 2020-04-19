@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        
+        <script>
+            let myArray = [];
+
+            function wholeNumber(number) {
+                for(let i=1; i<=number; i++) {
+                    if(i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
+                        myArray.push("yu-gi-oh")
+                    }
+                    else if(i % 2 == 0 && i % 3 == 0) {
+                        myArray.push("yu-gi")
+                    }
+                    else if(i % 3 == 0 && i % 5 == 0) {
+                        myArray.push("gi-oh")
+                    }
+                    else if(i % 2 == 0 && i % 5 == 0) {
+                        myArray.push("yu-oh")
+                    }
+                    else if(i % 2 == 0) {
+                        myArray.push("yu")
+                    }
+                    else if(i % 3 == 0){
+                        myArray.push("gi")
+                    }
+                    else if(i % 5 == 0) {
+                        myArray.push("oh")
+                    }
+                    else{
+                        myArray.push(i)
+                    }
+                    
+                }
+                console.log(myArray);
+                
+            }
+            wholeNumber(100);
+            wholeNumber(10)
+            
+
+
+            
+        </script>
+    </body>
+</html>
